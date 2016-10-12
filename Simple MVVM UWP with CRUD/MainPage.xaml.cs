@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Security;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
@@ -28,6 +29,7 @@ namespace Simple_MVVM_UWP_with_CRUD
         {
             this.InitializeComponent();
             Organization = new OrganizationViewModel("Office");
+            
         }
 
         public OrganizationViewModel Organization { get; set; }
